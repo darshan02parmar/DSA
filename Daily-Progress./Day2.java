@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Day2Questions {
+class Day2 {
 	public static void main(String args[]) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -9,11 +9,11 @@ class Day2Questions {
 		You have to output the average of these 3 numbers */
 		
 		System.out.println("Enter Three Numbers: ");
-        int a=s.nextInt();
-        int b=s.nextInt();
-        int c=s.nextInt();
-        int avg=(a+b+c)/3;
-        System.out.println(avg);
+     		   int a=s.nextInt();
+     		   int b=s.nextInt();
+     		   int c=s.nextInt();
+      		  int avg=(a+b+c)/3;
+      		  System.out.println(avg);
 		
 		/* 
 		Question 2: In a program,input the side of a square,,	You have to output the area of the square. 
@@ -23,11 +23,11 @@ class Day2Questions {
 		int a = sc.nextInt();
 		System.out.println("Area of square= " + a*a);
 		
-		/* 
-		Question 3: Enter cost of 3 items from the user(float)-
-		a pencil, a pen and an eraser. 
-		You have to output the total cost of the items back to the user as their bill..
-		Add 18% gst tax	to bill	
+	/* 
+	Question 3: Enter cost of 3 items from the user(float)-
+	a pencil, a pen and an eraser. 
+	You have to output the total cost of the items back to the user as their bill..
+	Add 18% gst tax	to bill	
 		*/
     System.out.println("Enter cost of 3 items: ");
 		float pen=s.nextFloat();
