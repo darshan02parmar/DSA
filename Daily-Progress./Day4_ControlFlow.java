@@ -87,4 +87,37 @@ public class SumEvenOdd {
         System.out.println("Sum of odd numbers: " + oddSum);
     }
 }
-//
+//Factorial of n
+
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        System.out.print("Enter a positive integer: ");
+        int n = s.nextInt();
+        
+        int fact = 1;
+        
+        for (int i = 1; i <= n; i++) {  
+            fact *= i;
+        }        
+        System.out.println("Factorial of " + n + " is: " + fact);
+        
+        s.close(); 
+    }
+}
+// takes a number 𝑁 from the user and prints its multiplication table
+
+import java.util.*;
+public class Multi_Table {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        
+        for (int i = 1; i<=10; i++) {
+            System.out.println(n + "*" + i + "=" + (n*i));
+        }
+    }
+}
