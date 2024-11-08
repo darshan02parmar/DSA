@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Patterns(I) {
     
-// Star Pattern
+//1] Star Pattern
   public static void main(String[] args) {
         
         System.out.print("Enter number:");
@@ -18,7 +18,7 @@ public class Patterns(I) {
         }
     }
 
-  // Inverted Star pattern
+//2] Inverted Star pattern
     public static void main(String[] args) {
         System.out.print("Enter number:");
         Scanner s=new Scanner(System.in);
@@ -32,7 +32,7 @@ public class Patterns(I) {
         }
     }
 
-// Half pyramind
+//3] Half pyramind
       public static void main(String[] args) {
         System.out.print("Enter number:");
         Scanner s=new Scanner(System.in);
@@ -47,7 +47,7 @@ public class Patterns(I) {
         }
     }
 
-// Character pattern
+// 4]Character pattern
     
      public static void main(String[] args) {
         System.out.print("Enter number ");
@@ -64,7 +64,7 @@ public class Patterns(I) {
         }        
     }
 
-// FLOYD'S Triangle pattern
+//5] FLOYD'S Triangle pattern
 
   public static void main(String[] args) {
     System.out.print("Enter number ");
