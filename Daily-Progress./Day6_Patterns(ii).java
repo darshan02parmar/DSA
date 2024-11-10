@@ -46,5 +46,38 @@ public class Pattern(ii) {
             
         }
     }
-  
+// Print "D" pattern
+  public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        System.out.print("Enter the size for the letter D: ");
+        int n = s.nextInt();
+        
+        // Generate the "D" pattern
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                
+                // Left vertical line
+                if (j == 1) {
+                    System.out.print("*");
+                } 
+                
+                // Top and bottom horizontal lines for the curve of "D"
+                else if ((i == 1 || i == n) && j < n - 1) {
+                    System.out.print("*");
+                }
+                
+                // Right vertical curve of "D" with a rounded shape
+                else if (j == n - 1 && i != 1 && i != n) {
+                    System.out.print("*");
+                }
+                
+                // Inside spaces for the "D"
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+  }
 }
