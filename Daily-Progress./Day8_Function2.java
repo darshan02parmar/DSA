@@ -152,4 +152,28 @@ public class Palidrome {
         return original==reverse;
     }
 }
-//
+//Sum of digit
+
+import java.util.Scanner;
+
+public class SumOfDigit {
+    public static void  main(String[] args) {
+        System.out.println("Enter number: ");
+        Scanner s=new Scanner(System.in);
+
+        int number=s.nextInt();
+
+       int result=sod(number);
+       System.out.println(result);
+    }
+    public static int  sod(int n){
+        int sum=0;
+        while(n>0){
+            int lastdigit=n%10;
+            sum+=lastdigit;
+            n/=10;
+        }
+        return sum;
+    }
+
+}
