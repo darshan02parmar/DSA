@@ -78,4 +78,78 @@ public class DecimalToBinary {
         dectobin(5);
     }
 }
+//Avg of 3
+public class AvgFunc {
+    
+    public static int AvgOfThree(int a,int b,int c){
+        
+        int avg=(a+b+c)/3;
+        return avg;
+    }
 
+    public static void main(String[] args) {
+    
+        System.out.println("Avrage of three number is "+ AvgOfThree(4, 3, 5));
+    }
+}
+//Even Accept ,,returns true
+
+
+import java.util.Scanner;
+
+public class EvenAccept {
+    
+    public static boolean  isEven(int n){
+        if(n%2==0){
+            return true;
+        }else{
+            return false;
+        }
+       
+
+    }
+
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+
+    if(isEven(n)){
+        System.out.println("number is even");
+    }else{
+        System.out.println("number is odd");
+    }
+
+}
+}
+//Palidrome Number
+
+
+import java.util.Scanner;
+
+public class Palidrome {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter number: ");
+        int number=s.nextInt();
+
+        if(isPalidrome(number)){
+            System.out.println(number+ " is palidrome");
+        }else{
+            System.out.println(number+ " is not palidrome");
+
+        }
+    }
+    public static boolean isPalidrome(int n){
+
+        int original=n;
+        int reverse=0;
+
+        while(n!=0){
+            int digit=n%10;
+            reverse=(reverse*10)+digit;
+            n=n/10;
+        }
+        return original==reverse;
+    }
+}
+//
