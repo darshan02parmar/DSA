@@ -68,6 +68,40 @@ public class Searching {
         }
     }
 }
+//Binary Search
+public class Searching {
+ public static int binarySearch(int numbers[],int key){
+        int start=0;
+        int end= numbers.length-1;
+        int index=-1;
+
+        while(start<=end){
+            int mid=(start+end)/2;
+            if(numbers[mid]==key){
+                index=mid;
+                break;
+            } else if (numbers[mid]<key) {
+                start=mid+1;
+            }else if(numbers[mid]>key){
+                end=mid-1;
+            }
+        }
+        return index;
+ }
+     public static void main(String[] args) {
+        int numbers[]={10,20,30,40,50,60};
+        int key=60;
+     
+       int index=binarySearch(numbers,key);
+        if (index == -1) {
+            System.out.println("Not Found");
+        }else {
+            System.out.println("Key is at index:"+ index);
+        }
+    }
+}
+
+
 
 //Largest & smallest element in array
 
