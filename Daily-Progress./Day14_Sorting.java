@@ -1,8 +1,7 @@
 
 public class Sorting {
 
-// 1] Bubble Sort
-  //     Time Complexity : O(n²)
+// 1] Bubble Sort  [ Time Complexity : O(n²) ]
 
     public static void BubbleSort(int[] arr){
         for (int i = 0; i < arr.length-1; i++) {
@@ -37,8 +36,8 @@ public class Sorting {
         }
     }
 
-//  2] SelectionSort
-  //  Time Complexity : O(n²)
+//  2] SelectionSort : [ Time Complexity : O(n²) ]
+  
    public static void SelectionSort(int[] arr){
        for (int i = 0; i < arr.length-1 ; i++) {
            int minpos=i;
@@ -53,6 +52,28 @@ public class Sorting {
            arr[i]=temp;
        }
    }
+  
+ // 3] InsertionSort : [ Time Complexity : O(n²) ]
+  
+   public static void insertionSort(int[] arr){
+        for (int i = 1; i < arr.length ; i++) {
+            int curr = arr[i];    // Store current element
+            int prev = i-1;       // Index of previous element
+
+            // Move elements that are greater than curr
+            // to one position ahead of their current position
+            while (prev >= 0 && arr[prev] > curr){
+                arr[prev+1] = arr[prev];
+                prev--;
+            }
+            arr[prev+1] = curr;   // Place curr in its correct position
+        }
+    }
+    public static void printArray(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+    }
  public static void main(String[] args) {
         int[] arr={5,4,2,1,3};
         BubbleSort(arr);
