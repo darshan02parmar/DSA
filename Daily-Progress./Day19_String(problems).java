@@ -23,7 +23,7 @@ public class Convert_UpperCase {
     }
 }
 
-//String  Compression
+// String  Compression
 
 public class String_Compression {
     public static String compress(String str) {
@@ -50,7 +50,7 @@ public class String_Compression {
         System.out.println(compress(str));
     }
 }
-//Anagrams
+// Anagrams
 
 import java.util.*;
 public class Anagrams {
@@ -58,7 +58,7 @@ public class Anagrams {
         String str1="race";
         String str2="care";
 
-//Convert Strings to lowercase. Why? so that we don't have to check separately for lower & uppercase
+// Convert Strings to lowercase. Why? so that we don't have to check separately for lower & uppercase
         str1=str1.toLowerCase();
         str2=str2.toLowerCase();
 
