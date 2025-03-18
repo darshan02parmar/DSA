@@ -264,3 +264,47 @@ public class Queue_2Stacks {
         }
     }
 }
+//5]InterleaveTwoHalves
+import java.util.*;
+
+public class InterleaveTwoHalves {
+    public static void interleave(Queue<Integer> q) {
+        int size = q.size();
+
+        // If the queue size is odd, interleaving won't work properly
+        if (size % 2 != 0) {
+            System.out.println("Queue size must be even to interleave properly.");
+            return;
+        }
+
+        Queue<Integer> firstHalf = new LinkedList<>();
+
+        // Move first half of the elements into firstHalf queue
+        for (int i = 0; i < size / 2; i++) {
+            firstHalf.add(q.remove());
+        }
+
+        // Interleave elements from firstHalf and the remaining elements in q
+        while (!firstHalf.isEmpty()) {
+            q.add(firstHalf.remove()); // Add from first half
+            q.add(q.remove()); // Add from second half (original queue)
+        }
+    }
+
+    public static void main(String[] args) {
+        Queue<Integer> q = new LinkedList<>();
+
+        // Adding 10 elements (even count)
+        for (int i = 1; i <= 10; i++) {
+            q.add(i);
+        }
+
+        interleave(q);
+
+        // Print the interleaved queue
+        while (!q.isEmpty()) {
+            System.out.print(q.remove() + " ");
+        }
+        System.out.println();
+    }
+}
