@@ -1,6 +1,19 @@
+import java.util.*;
+
+//print number from 1 to n
+public class Control_flow {
+    public static void main(String args[]){
+        System.out.println("Enter number :");
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i);
+        }
+    }
+}
 
 // check the number is Prime or not
-import java.util.*;
+
 public class Prime {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
