@@ -11,6 +11,29 @@ public class Control_flow {
         }
     }
 }
+//using while loop        
+int i=1;
+        while (i<=n){
+            System.out.println(i);
+            i++;
+        }
+
+//sum of n natural number
+        int sum=0;
+        int i=1;
+        while (n>=i){
+            sum+=i;
+            i++;
+        }
+        System.out.println("Sum is :"+sum);
+//Reverse a number
+         int n=10208;
+        while (n>0) {
+           int last_digit=n%10;
+            System.out.print(last_digit);
+            n=n/10;
+        }
+        System.out.println();
 
 // check the number is Prime or not
 
