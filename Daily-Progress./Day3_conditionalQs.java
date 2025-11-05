@@ -14,7 +14,20 @@ public class conditionalQs {
         else{
             System.out.println("negative");
         }
-
+// largest of three number
+		System.out.println("Enter a number A");
+        int a=s.nextInt();
+        System.out.println("Enter a number B");
+        int b=s.nextInt();
+        System.out.println("Enter a number C");
+        int c=s.nextInt();
+        if (a>b & a>c){
+            System.out.println("A is largest number");
+        }else if (b>c){
+            System.out.println("B is largest number");
+        }else {
+            System.out.println("C is largest number");
+		}
   //Question 2 : Check the fever upon temperature input
 
      double temp=103.5;    
